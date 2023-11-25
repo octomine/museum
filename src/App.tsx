@@ -1,12 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./App.css";
 
 function App() {
-  useEffect(() => {
-    console.log(window.location.hash);
-  }, []);
-
-  return <div className="App"></div>;
+  return <div className="App">{window.location.hash}</div>;
 }
 
 export default App;
