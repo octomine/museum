@@ -7,7 +7,10 @@ function App() {
     const hash = window.location.hash.replace(/#/, "");
     switch (hash) {
       case "aaa":
-        setCn("pict");
+        setCn("pict1");
+        break;
+      case "bbb":
+        setCn("pict2");
         break;
       default:
     }

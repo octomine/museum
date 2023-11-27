@@ -2,8 +2,14 @@
   text-align: center;
 }
 
-.pict {
+.pict1 {
   width: 100%;
   height: 100vh;
   background: url("assets/sun20jl.jpeg") center no-repeat;
+}
+
+.pict2 {
+  width: 100%;
+  height: 100vh;
+  background: url("assets/mon21jl.jpeg") center no-repeat;
 }
