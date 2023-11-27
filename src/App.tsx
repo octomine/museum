@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
-  return <div className="App">{window.location.hash}</div>;
+  const [cn, setCn] = useState("App");
+  useEffect(() => {
+    const hash = window.location.hash.replace(/#/, "");
+    switch (hash) {
+      case "aaa":
+        setCn("pict");
+        break;
+      default:
+    }
+  }, []);
+
+  return <div className={cn}></div>;
 }
 
 export default App;
